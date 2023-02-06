@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-06T14:05:37 PST" name="Regression Suite" finished-at="2023-02-06T14:06:02 PST" duration-ms="25075">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTest.emptyPasswordLogin()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" name="emptyPasswordLogin" class="com.neotech.testcases.LoginTest"/>
+        <method signature="LoginTest.invalidPasswordLogin()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" name="invalidPasswordLogin" class="com.neotech.testcases.LoginTest"/>
+        <method signature="LoginTest.validLogin()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" name="validLogin" class="com.neotech.testcases.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginTest.validLogin()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" name="validLogin" class="com.neotech.testcases.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-02-06T14:05:37 PST" name="Regression Test" finished-at="2023-02-06T14:06:02 PST" duration-ms="25075">
+      <class name="com.neotech.testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:05:37 PST" name="setUp" finished-at="2023-02-06T14:05:41 PST" duration-ms="4186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emptyPasswordLogin()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:05:41 PST" name="emptyPasswordLogin" finished-at="2023-02-06T14:05:44 PST" duration-ms="2315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPasswordLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:05:44 PST" name="tearDown" finished-at="2023-02-06T14:05:44 PST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:05:44 PST" name="setUp" finished-at="2023-02-06T14:05:47 PST" duration-ms="2993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidPasswordLogin()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:05:47 PST" name="invalidPasswordLogin" finished-at="2023-02-06T14:05:53 PST" duration-ms="5827" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message does NOT match! expected [Invalid Credentials - bla bla bla] but found [Invalid Credentials]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message does NOT match! expected [Invalid Credentials - bla bla bla] but found [Invalid Credentials]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at com.neotech.testcases.LoginTest.invalidPasswordLogin(LoginTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:05:53 PST" name="tearDown" finished-at="2023-02-06T14:05:53 PST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:05:53 PST" name="setUp" finished-at="2023-02-06T14:05:56 PST" duration-ms="2961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:05:56 PST" name="validLogin" finished-at="2023-02-06T14:06:02 PST" duration-ms="6254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.neotech.testcases.LoginTest@6892b3b6]" started-at="2023-02-06T14:06:02 PST" name="tearDown" finished-at="2023-02-06T14:06:02 PST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.neotech.testcases.LoginTest -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Regression Suite -->
+</testng-results>
