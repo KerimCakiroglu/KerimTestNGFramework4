@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
+	
+	<listeners>
+		<listener class-name="com.neotech.testbase.Listener" />
+	</listeners>
+
 	<test thread-count="5" name="Regression Test">
 
-		<!-- Create a regression.xml file similar to smoke.xml
-It should include com.neotech.testcases package, and should include methods that belong to regression group.
-It should also include Listener class
-
-Then, run regression.xml file as TestNG Suite -->
+		
 
 		<groups>
 

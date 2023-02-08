@@ -15,6 +15,8 @@ public class LoginTest extends CommonMethods {
 		LoginPageElements login = new LoginPageElements();
 		DashboardPageElements dashboard = new DashboardPageElements();
 
+		test.info("Entering valid login credintials");
+
 		// send username
 		sendText(login.username, ConfigsReader.getProperty("username"));
 		wait(1);
@@ -25,6 +27,8 @@ public class LoginTest extends CommonMethods {
 		// you can use jsClick() as well
 		click(login.logInButton);
 		wait(2);
+
+		test.info("Verifying that user is logged in.");
 
 		// verify username
 		String expected = "Jacqueline White";
