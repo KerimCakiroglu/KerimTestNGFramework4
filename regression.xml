@@ -7,7 +7,6 @@
 	</listeners>
 
 	<test thread-count="5" name="Regression Test">
-
 		
 
 		<groups>

@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.neotech.utils.CommonMethods;
+import com.neotech.utils.ConfigsReader;
 
 public class LoginPageElements extends CommonMethods {
 
@@ -25,6 +26,12 @@ public class LoginPageElements extends CommonMethods {
 
 	public LoginPageElements() {
 		PageFactory.initElements(driver, this);
+	}
+
+	public void adminLogin() {
+		sendText(username, ConfigsReader.getProperty("username"));
+		sendText(password, ConfigsReader.getProperty("password"));
+		click(logInButton);
 	}
 
 }

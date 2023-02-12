@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.neotech.testcases.LoginTest">
+      <class name="com.neotech.testcases.AssertionDemo">
         <methods>
-          <include name="generateReport"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="writeReport"/>
-          <include name="invalidPasswordLogin"/>
+          <include name="softAssert"/>
+          <include name="test1"/>
+          <include name="test4"/>
         </methods>
-      </class> <!-- com.neotech.testcases.LoginTest -->
+      </class> <!-- com.neotech.testcases.AssertionDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
